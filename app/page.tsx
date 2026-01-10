@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import ColorCard from "./components/ColorCard";
 import Toast from "./components/Toast";
+import NavBar from "./components/NavBar";
 
 interface Color {
   hex: string;
@@ -64,6 +65,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
+      <NavBar />
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
