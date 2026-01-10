@@ -19,9 +19,9 @@ export default function ColorCard({ hex, name, onCopy }: ColorCardProps) {
 
   return (
     <motion.div
-      className="group relative overflow-hidden rounded-2xl bg-white shadow-sm border border-white/50 backdrop-blur-sm"
+      className="group relative overflow-hidden rounded-2xl bg-gray-900 shadow-sm border border-gray-800/50 backdrop-blur-sm"
       style={{
-        boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)",
+        boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.2)",
       }}
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
@@ -39,16 +39,16 @@ export default function ColorCard({ hex, name, onCopy }: ColorCardProps) {
         <div className="flex items-center justify-between">
           <div>
             {name && (
-              <p className="text-sm font-medium text-gray-700 mb-1">{name}</p>
+              <p className="text-sm font-medium text-gray-300 mb-1">{name}</p>
             )}
-            <p className="text-sm font-mono text-gray-600">{hex.toUpperCase()}</p>
+            <p className="text-sm font-mono text-gray-400">{hex.toUpperCase()}</p>
           </div>
         </div>
 
         {/* Copy Button */}
         <motion.button
           onClick={handleCopy}
-          className="w-full py-2 px-4 rounded-lg text-sm font-medium text-gray-700 bg-gray-50 hover:bg-gray-100 transition-colors duration-200 border border-gray-200/50"
+          className="w-full py-2 px-4 rounded-lg text-sm font-medium text-gray-300 bg-gray-800 hover:bg-gray-700 transition-colors duration-200 border border-gray-700/50"
           whileTap={{ scale: 0.98 }}
         >
           Copy

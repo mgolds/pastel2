@@ -64,7 +64,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA]">
+    <div className="min-h-screen bg-black">
       <NavBar />
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
@@ -74,10 +74,10 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-light tracking-tight text-gray-900 mb-4">
+          <h1 className="text-5xl font-light tracking-tight text-white mb-4">
             Pastel
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             A curated collection of summer-inspired pastel colors
           </p>
         </motion.div>
@@ -95,8 +95,8 @@ export default function Home() {
               onClick={() => setFilter(button.value)}
               className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200 ${
                 filter === button.value
-                  ? "bg-gray-900 text-white shadow-sm"
-                  : "bg-white text-gray-700 hover:bg-gray-50 border border-gray-200/50"
+                  ? "bg-white text-black shadow-sm"
+                  : "bg-gray-900 text-gray-300 hover:bg-gray-800 border border-gray-800/50"
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
@@ -136,7 +136,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             className="text-center py-16"
           >
-            <p className="text-gray-500 text-lg">No colors found in this category.</p>
+            <p className="text-gray-400 text-lg">No colors found in this category.</p>
           </motion.div>
         )}
       </div>
