@@ -27,9 +27,9 @@ export default function Toast({ message, isVisible, onClose }: ToastProps) {
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -20, scale: 0.95 }}
           transition={{ duration: 0.2 }}
-          className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-xl bg-white shadow-lg border border-gray-200/50 backdrop-blur-sm"
+          className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-xl bg-gray-900 shadow-lg border border-gray-800/50 backdrop-blur-sm"
         >
-          <p className="text-sm font-medium text-gray-800">
+          <p className="text-sm font-medium text-gray-200">
             {message}
           </p>
         </motion.div>
