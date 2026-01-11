@@ -65,6 +65,18 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black">
+      {/* Goldsberry Logo */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className="fixed top-6 left-6 z-50"
+      >
+        <div className="bg-gray-900/80 backdrop-blur-md rounded-full px-4 py-2 shadow-sm border border-gray-800/50">
+          <span className="text-sm font-medium text-white">Goldsberry</span>
+        </div>
+      </motion.div>
+      
       <NavBar />
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
